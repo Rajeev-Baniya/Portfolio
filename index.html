@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rajeev's Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <div class="logo">
+          <h3>portfo<span>lio</span></h3>
+        </div>
+        <ul class="links" id="links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger" onclick="toogleMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+    </header>
+    <main class="main" id="home">
+      <section class="about">
+        <!-- <div class="about_image">
+          <img src="images/dp.png" alt="avatar" />
+        </div> -->
+        <div class="about_description">
+          <h4 class="small-heading">Hello, My name is</h4>
+          <h3 class="large-heading">Rajeev <span>Baniya</span></h3>
+          <h4 class="small-heading">I'm a Web Developer</h4>
+          <a href="#" class="btn-hire">Hire me &#8599;</a>
+        </div>
+        <div class="about_down">
+          <a href="#about">
+            <i class="fa-solid fa-angles-down"></i>
+          </a>
+        </div>
+      </section>
+      <section class="about-second" id="about">
+        <h3 class="large-heading">About <span>Me</span></h3>
+        <img src="images/dp2.jpg" alt="Avatar 2" />
+        <h4 class="small-heading">Developer <span> & Designer </span></h4>
+        <p class="first-p">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam sequi
+          saepe eaque mollitia nobis, suscipit laboriosam ipsum nulla aut
+          dolorem exercitationem voluptate vero nostrum tempore, quisquam animi,
+          quis vel odit.
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim
+          molestias sed et, asperiores facere placeat, porro cum consectetur
+          vero aspernatur provident quod nemo, laboriosam incidunt impedit
+          voluptatibus officia alias assumenda!
+        </p>
+
+        <a href="#" class="btn-hire">Lets Talk &#8599;</a>
+      </section>
+      <hr />
+      <section class="skills" id="skills">
+        <h3 class="large-heading">My <span>Skills</span></h3>
+        <div class="skills-images owl-carousel">
+          <img src="images/skills/css.png" alt="CSS" />
+          <img src="images/skills/html.png" alt="HTML" />
+          <img src="images/skills/java.jpg" alt="JAVA" />
+          <img src="images/skills/nodejs.png" alt="Node Js" />
+          <img src="images/skills/sql.jpeg" alt="SQL" />
+        </div>
+      </section>
+      <hr />
+      <section class="projects_main" id="projects">
+        <h3 class="large-heading project-heading">My <span>Projects</span></h3>
+        <div class="projects">
+          <div class="projects_each">
+            <img src="images/skills/css.png" alt="project 1" />
+            <div class="project_each-description">
+              <h4>Project 1</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+                eius, nemo autem consectetur iste esse doloremque illum
+                dignissimos repudiandae quibusdam beatae dolores quas? Eveniet,
+                natus reprehenderit adipisci ducimus iusto modi?
+              </p>
+              <a href="#" title="click for github repo"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="projects_each">
+            <img src="images/skills/html.png" alt="project 1" />
+            <div class="project_each-description">
+              <h4>Project 2</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+                eius, nemo autem consectetur iste esse doloremque illum
+                dignissimos repudiandae quibusdam beatae dolores quas? Eveniet,
+                natus reprehenderit adipisci ducimus iusto modi?
+              </p>
+              <a href="#" title="click for github repo"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+          </div>
+          <div class="projects_each">
+            <img src="images/skills/nodejs.png" alt="project 1" />
+            <div class="project_each-description">
+              <h4>Project 3</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+                eius, nemo autem consectetur iste esse doloremque illum
+                dignissimos repudiandae quibusdam beatae dolores quas? Eveniet,
+                natus reprehenderit adipisci ducimus iusto modi?
+              </p>
+              <a href="#" title="click for github repo"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="btn-view">
+          <a href="#" class="btn-hire">View All &#8599;</a>
+        </div>
+      </section>
+      <hr />
+      <section class="contact" id="contact">
+        <h3 class="large-heading">Contact <span>Me</span></h3>
+        <div class="contact_details">
+          <div>
+            <a href="mailto:rajeevbaniya11@gmail.com">
+              <i class="fa-regular fa-envelope"></i> rajeevbaniya11@gmail.com
+            </a>
+          </div>
+          <div>
+            <a href="tel:9805832174">
+              <i class="fa-solid fa-phone"></i>9805832174
+            </a>
+          </div>
+          <div>
+            <p>
+              <i class="fa-regular fa-address-book"></i> Batulechaur,
+              Pokhara-16, Nepal
+            </p>
+          </div>
+        </div>
+        <div class="contact_icons">
+          <a href="#">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>&#169; Developed by Rajeev Baniya</p>
+    </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      function toogleMenu() {
+        const showHide = document.getElementById("links");
+        showHide.classList.toggle("show-hide");
+      }
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        responsiveClass: true,
+        autoplay: true,
+        nav: true,
+        autoplayHoverPause: true,
+        autoplaySpeed: 200,
+        margin: 50,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 3,
+          },
+          1000: {
+            items: 4,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
