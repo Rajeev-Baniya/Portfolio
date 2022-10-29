@@ -177,6 +177,8 @@ header {
 }
 
 .about-second img {
+  border: 2px solid #fa5252;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   height: 230px;
   object-fit: cover;
   width: 230px;
@@ -224,6 +226,17 @@ h3 span {
 
   /* object-fit: contain; */
   border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.skills-images p {
+  font-size: 18px;
+}
+.skills-images p:not(last-child) {
+  margin-bottom: 8px;
+}
+.skills-images p:last-child {
+  color: #f03e3e;
 }
 
 .owl-dots {
