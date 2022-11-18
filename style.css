@@ -1,3 +1,9 @@
+:root {
+  --primary-color: #f03e3e;
+  --secondary-color: #fa5252;
+  --common-padding: 64px 40px;
+}
+
 *,
 *::after,
 *::before {
@@ -5,7 +11,17 @@
   padding: 0;
   box-sizing: inherit;
 }
-
+ul,
+nav,
+p,
+li,
+a,
+h1,
+h3,
+h4 {
+  padding: 0;
+  margin: 0;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -50,7 +66,7 @@ a {
 header {
   background-color: #212529;
   /* background-color: #e9ecef; */
-  padding: 30px 40px;
+  padding: 24px 40px;
   position: sticky;
   top: 0;
   /* width: 100%; */
@@ -79,6 +95,10 @@ header {
   text-transform: uppercase;
   font-size: 18px;
   letter-spacing: 1.5px;
+}
+
+.logo h3 {
+  color: #fff;
 }
 
 .logo span {
@@ -152,7 +172,7 @@ header {
 }
 .about_down {
   position: absolute;
-  bottom: 28px;
+  bottom: 20px;
 }
 
 .about_down a {
@@ -171,7 +191,7 @@ header {
 /* about-second */
 .about-second {
   /* background-color: #343a40; */
-  padding: 60px 40px;
+  padding: 64px 40px;
   text-align: center;
   /* color: #fff; */
 }
@@ -195,8 +215,79 @@ header {
   letter-spacing: 0.4px;
 }
 
+/* My experiences */
+.my_experiences {
+  padding: var(--common-padding);
+}
+
+.experience {
+  justify-content: center;
+  display: flex;
+  gap: 48px;
+}
+
+.experience_each {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  padding: 16px 18px;
+  border-radius: 4px;
+}
+.experience_each h4 {
+  margin-bottom: 18px;
+  font-size: 24px;
+  line-height: 1.4;
+  letter-spacing: 0.4px;
+}
+.experience_each p {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.experience_each p a:hover {
+  text-decoration: underline;
+}
+
+.experience_each .date {
+  font-size: 16px;
+  opacity: 0.8;
+}
+.social-icons {
+  display: flex;
+  margin-bottom: 16px;
+  margin-top: 14px;
+
+  /* padding: 0 6px; */
+  gap: 12px;
+}
+
+.social-icons a {
+  color: #343a40;
+}
+
+.social-icons a i {
+  font-size: 22px;
+}
+
+.modal-dialog img {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  height: 188px;
+  object-fit: cover;
+  width: 50%;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+.modal-body p {
+  margin-bottom: 8px;
+}
+.modal-body ul {
+  padding: 4px 24px;
+}
+
+.modal-body u {
+  color: var(--primary-color);
+}
+/* Skills */
 .skills {
-  padding: 60px 40px;
+  padding: 64px 40px;
   text-align: center;
 }
 
@@ -275,7 +366,7 @@ h3 span {
 }
 
 .projects_main {
-  padding: 60px 40px;
+  padding: 64px 40px;
   /* background-color: #343a40; */
 }
 .project-heading {
@@ -312,12 +403,12 @@ h3 span {
 
 .project_each-description h4 {
   font-size: 24px;
-  margin-bottom: 6px;
+  margin-bottom: 10px;
 }
 
 .project_each-description p {
   font-size: 17px;
-  margin-bottom: 6px;
+  margin-bottom: 14px;
   opacity: 0.8;
   line-height: 1.1;
 }
@@ -346,7 +437,7 @@ h3 span {
 }
 
 .contact {
-  padding: 60px 40px;
+  padding: 64px 40px;
   text-align: center;
 }
 

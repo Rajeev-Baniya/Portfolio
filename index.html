@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rajeev's Portfolio</title>
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
@@ -19,6 +20,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- CSS only -->
 
     <link
       rel="stylesheet"
@@ -27,17 +29,34 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
     <link href="style.css" rel="stylesheet" />
   </head>
   <body>
     <header>
       <nav class="nav">
         <div class="logo">
-          <h3>portfo<span>lio</span></h3>
+          <a href="#home">
+            <h3>portfo<span>lio</span></h3></a
+          >
         </div>
         <ul class="links" id="links">
-          <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
+          <li><a href="#my_experiences">Experience</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -56,7 +75,9 @@
           <h4 class="small-heading">Hello, My name is</h4>
           <h3 class="large-heading">Rajeev <span>Baniya</span></h3>
           <h4 class="small-heading">I'm a Web Developer</h4>
-          <a href="#" class="btn-hire">Hire me &#8599;</a>
+          <a href="#" class="btn-hire"
+            ><i class="fa-solid fa-download"></i> Download Resume</a
+          >
         </div>
         <div class="about_down">
           <a href="#about">
@@ -64,9 +85,10 @@
           </a>
         </div>
       </section>
+
       <section class="about-second" id="about">
         <h3 class="large-heading">About <span>Me</span></h3>
-        <img src="images/dp2.jpg" alt="Avatar 2" />
+        <img src="images/me.JPG" alt="Avatar 2" />
         <h4 class="small-heading">Developer <span> & Designer </span></h4>
         <p class="first-p">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam sequi
@@ -83,7 +105,254 @@
 
         <a href="#" class="btn-hire">Lets Talk &#8599;</a>
       </section>
-      <hr />
+
+      <section id="my_experiences" class="my_experiences">
+        <h3 class="large-heading project-heading">
+          My <span>Experiences</span>
+        </h3>
+        <div class="experience">
+          <div class="experience_each">
+            <h4>Frontend Developer</h4>
+            <p>
+              Company Name:
+              <a href="https://ingrails.com" target="_blank"
+                ><strong>Ingrails Pvt Ltd</strong></a
+              >
+            </p>
+            <p class="date">
+              <i class="fa-regular fa-calendar-days"></i> December 2021 - Till
+              Now
+            </p>
+            <p>
+              <i class="fa-regular fa-envelope"></i>
+              <a href="mailto:mail@ingrails.com">mail@ingrails.com</a>
+            </p>
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              View more
+            </button>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">
+                      Frontend Developer
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="images/InGrails.jpg" />
+                    <p><strong> Ingrails Pvt Ltd </strong></p>
+                    <p>I am working as a <u>Frontend developer </u> here.</p>
+                    <p>
+                      <a href="https://www.veda-app.com" target="_blank"
+                        >Veda app</a
+                      >
+                      is the major product of the company.
+                    </p>
+                    <p>
+                      My responsibilty here is to create and maintain websites
+                      frontend.
+                    </p>
+                    <p>
+                      These are some tools we use here for creating websites/web
+                      apps
+                    </p>
+                    <ul class="row">
+                      <li class="col-6">React Js</li>
+                      <li class="col-6">Next Js</li>
+                      <li class="col-6">HTML / CSS /JS / SCSS</li>
+                      <li class="col-6">Vanilla Php</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mentor -->
+
+          <div class="experience_each">
+            <h4>Mentorship</h4>
+            <p>
+              College Name:
+              <a href="http://www.macpokhara.edu.np/" target="_blank"
+                ><strong>Mt. Annapurna Campus</strong></a
+              >
+            </p>
+            <p class="date">
+              <i class="fa-regular fa-calendar-days"></i> 20 days workshop
+            </p>
+            <p>
+              <i class="fa-regular fa-envelope"></i>
+              <a href="info@macpokhara.edu.np">info@macpokhara.edu.np</a>
+            </p>
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal3 "
+            >
+              View more
+            </button>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal3"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">
+                      Mentorship
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="images/mac.png" />
+                    <p><strong> Mount Annapurna Campus </strong></p>
+                    <p>
+                      I conducted 20 days <u>Frontend web development </u>
+                      workshop here.
+                    </p>
+
+                    <p>
+                      I taught students of 3rd sem and 5th sem basics of web
+                      development.
+                    </p>
+                    <p>Some technologies we learned were</p>
+                    <ul class="row">
+                      <li class="col-6">HTML</li>
+                      <li class="col-6">CSS / Bootstrap</li>
+                      <li class="col-6">JS</li>
+                      <li class="col-6">Git / Github</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="experience_each">
+            <h4>Backend Developer</h4>
+            <p>
+              Company Name:
+              <a
+                href="https://brandbuilder-nepal.business.site/"
+                target="_blank"
+                ><strong>Brand Builder </strong>
+              </a>
+            </p>
+            <p class="date">
+              <i class="fa-regular fa-calendar-days"></i> January 2021 - July
+              2021
+            </p>
+            <p>
+              <i class="fa-regular fa-envelope"></i>
+              <a href="mailto:branduilder@gmail.com">brandbuilder@gmail.com</a>
+            </p>
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal2"
+            >
+              View more
+            </button>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal2"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">
+                      Backend Developer
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+
+                  <div class="modal-body">
+                    <img src="images/bb.png" />
+                    <p><strong> BrandBuilder Pvt Ltd </strong></p>
+                    <p>I worked as a <u>Backend Developer </u> here.</p>
+                    <p>
+                      My responsibilty here is was to create api's for the
+                      applications we were building.
+                    </p>
+                    <p>
+                      I also performed activities related to Authentication,
+                      Authorization, CRUD operations, Database
+                    </p>
+                    <p>
+                      These are some tools we use here for creating websites/web
+                      apps
+                    </p>
+                    <ul class="row">
+                      <li class="col-6">Node JS</li>
+                      <li class="col-6">Express Js</li>
+                      <li class="col-6">Mongo DB</li>
+                      <li class="col-6">REST API</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="skills" id="skills">
         <h3 class="large-heading">My <span>Skills</span></h3>
         <div class="skills-images owl-carousel">
@@ -100,8 +369,35 @@
           <div class="skills_inner">
             <img src="images/skills/java.jpg" alt="JAVA" />
             <p>JAVA</p>
+            <p>Expertise: 60%</p>
+          </div>
+          <div class="skills_inner">
+            <img src="images/skills/mongodb.png" alt="Mongo DB" />
+            <p>Mongo DB</p>
+            <p>Expertise: 85%</p>
+          </div>
+          <div class="skills_inner">
+            <img src="images/skills/reactjs.png" alt="React JS" />
+            <p>React JS</p>
+            <p>Expertise: 85%</p>
+          </div>
+
+          <div class="skills_inner">
+            <img
+              src="images/skills/git.png"
+              alt="GIT"
+              style="object-fit: cover"
+            />
+            <p>Git</p>
+            <p>Expertise: 90%</p>
+          </div>
+
+          <div class="skills_inner">
+            <img src="images/skills/nextjs.png" alt="NEXT" />
+            <p>Next JS</p>
             <p>Expertise: 70%</p>
           </div>
+
           <div class="skills_inner">
             <img src="images/skills/nodejs.png" alt="Node Js" />
             <p>NODE JS</p>
@@ -114,7 +410,7 @@
           </div>
         </div>
       </section>
-      <hr />
+
       <section class="projects_main" id="projects">
         <h3 class="large-heading project-heading">My <span>Projects</span></h3>
         <div class="projects">
@@ -169,7 +465,7 @@
           <a href="#" class="btn-hire">View All &#8599;</a>
         </div>
       </section>
-      <hr />
+
       <section class="contact" id="contact">
         <h3 class="large-heading">Contact <span>Me</span></h3>
         <div class="contact_details">
@@ -209,6 +505,7 @@
     <footer class="footer">
       <p>&#169; Developed by Rajeev Baniya</p>
     </footer>
+    <!-- JavaScript Bundle with Popper -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
       integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
