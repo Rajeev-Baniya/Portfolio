@@ -124,6 +124,14 @@ header {
 .links a:hover {
   color: #f03e3e;
 }
+/* 
+.about_down i {
+  color: white !important;
+}
+
+.about_down i:hover {
+  color: var(--secondary-color) !important;
+} */
 
 /* About Section */
 .about {
@@ -358,7 +366,7 @@ h3 span {
   height: 25.6rem;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
-  /* object-fit: contain; */
+  object-fit: cover;
   border-radius: 8px;
   margin-bottom: 1.6rem;
 }
@@ -587,6 +595,10 @@ h3 span {
   .projects {
     gap: 28px;
     /* grid-template-columns: 1fr 1fr; */
+  }
+
+  .owl-dots {
+    display: none;
   }
 }
 
