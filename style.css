@@ -267,14 +267,16 @@ header {
 
 .experience {
   justify-content: center;
-  display: flex;
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 3.2rem;
 }
 
 .experience_each {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   padding: 1.6rem 1.8rem;
-  flex-basis: 33.33%;
+  /* flex-basis: 33.33%; */
   border-radius: 4px;
 }
 .experience_each h4 {
@@ -560,8 +562,10 @@ h3 span {
   .projects {
     grid-template-columns: 1fr 1fr;
   }
+
   .experience {
-    flex-direction: column;
+    /* flex-direction: column; */
+    grid-template-columns: 1fr 1fr;
     gap: 2.4rem;
   }
 }
