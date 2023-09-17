@@ -98,12 +98,15 @@ header {
   letter-spacing: 1.5px;
 }
 
-.logo h3 {
+.logo h2 {
   color: #fff;
   font-size: 2.4rem;
 }
 
-.logo span {
+.logo .sign {
+  margin-bottom: 2px;
+}
+.logo .b {
   color: #f03e3e;
 }
 
