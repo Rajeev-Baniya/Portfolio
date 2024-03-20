@@ -504,20 +504,28 @@ h3 span {
 .contact {
   padding: var(--common-padding);
   text-align: center;
+  background-color: #212529;
+  color: #fff;
 }
 
 .contact h3 {
   margin-bottom: 4.2rem;
+  color: #fff;
 }
 
 .contact_details {
   margin-bottom: 3.6rem;
 }
+.contact_details a,
+.contact_details p,
+.contact_details i {
+  color: #fff !important;
+}
 
 .contact a,
 .contact p {
   font-size: 2.2rem;
-  color: #000;
+  color: #fff;
   margin-bottom: 1.6rem;
   /* font-weight: bold; */
   display: inline-block;
@@ -542,8 +550,10 @@ h3 span {
 }
 
 .footer {
-  padding: 0px 4rem 1.5rem 4rem;
+  padding: 1.5rem 4rem 1.5rem 4rem;
   text-align: center;
+  background-color: #212529;
+  color: #e9ecef;
 }
 
 .footer p {
@@ -606,6 +616,13 @@ h3 span {
 
   .owl-dots {
     display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .experience {
+    grid-template-columns: 1fr;
+    /* gap: 2.4rem; */
   }
 }
 
