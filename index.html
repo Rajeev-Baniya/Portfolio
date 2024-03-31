@@ -3,11 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="description" content="Rajeev Baniya's Portfolio and website" />
     <meta
       name="keywords"
-      content="Rajeev, Baniya, Rajeev Baniya Portfolio, CV, Rajeev Baniya CV, Rajeev Baniya Website"
+      content="rajeev, baniya, rajeev baniya, simple website, rajeev baniya portfolio, rajeev baniya CV, rajeev baniya website"
     />
+    <meta
+      name="description"
+      content="Rajeev Baniya is a tech professional who is working as a web developer in Nepal. Always curious about learning new things and implementing them in real projects. Worked on numerous projects with some renowned companies in Nepal."
+    />
+
     <meta name="author" content="Rajeev Baniya" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rajeev Baniya | Portfolio</title>
@@ -99,7 +103,34 @@
 
       <section class="about-second" id="about">
         <h3 class="large-heading">About <span>Me</span></h3>
-        <img src="images/me.JPG" alt="Rajeev Baniya Photo" />
+
+        <div
+          class="d-flex flex-wrap flex-sm-nowrap gap-2 gap-sm-4 gap-lg-5 justify-content-center align-items-center"
+        >
+          <div>
+            <img src="images/me.JPG" alt="Rajeev Baniya Photo" />
+          </div>
+          <div class="text-start">
+            <h2 class="small-heading">
+              <strong>Web <span> Developer </span> </strong>
+            </h2>
+
+            <p class="first-p text-start">
+              I am <strong>Rajeev Baniya</strong>, a Full Stack Web developer
+              with 2 years of experience.
+            </p>
+            <p class="text-start">
+              I have worked on numerous projects. MERN stack is my preferred set
+              of technologies for web development. I am fast learner and a team
+              player with good analytical, technical and communicatin skills.
+            </p>
+            <a href="mailto:rajeevbaniya11@gmail.com" class="btn-hire"
+              >Lets Talk &#8599;</a
+            >
+          </div>
+        </div>
+
+        <!-- <img src="images/me.JPG" alt="Rajeev Baniya Photo" />
         <h4 class="small-heading">Full Stack <span> Developer </span></h4>
         <p class="first-p">
           I am <strong>Rajeev Baniya</strong>, a Full stack web developer with 2
@@ -109,11 +140,11 @@
           I have worked on numerous projects. MERN stack is my preferred set of
           technologies for web development. I am fast learner and a team player
           with good analytical, technical and communicatin skills.
-        </p>
+        </p> -->
 
-        <a href="mailto:rajeevbaniya11@gmail.com" class="btn-hire"
+        <!-- <a href="mailto:rajeevbaniya11@gmail.com" class="btn-hire"
           >Lets Talk &#8599;</a
-        >
+        > -->
       </section>
 
       <section class="education">
@@ -575,7 +606,7 @@
 
       <section class="projects_main" id="projects">
         <h3 class="large-heading project-heading">My <span>Projects</span></h3>
-        <div class="projects">
+        <div class="projects owl-carousel text-center">
           <div class="projects_each">
             <img
               src="images/projects/fmc.png"
@@ -821,7 +852,7 @@
         const showHide = document.getElementById("links");
         showHide.classList.toggle("show-hide");
       }
-      $(".owl-carousel").owlCarousel({
+      $(".skills-images").owlCarousel({
         loop: true,
         margin: 10,
         responsiveClass: true,
@@ -839,6 +870,31 @@
           },
           1000: {
             items: 4,
+          },
+        },
+      });
+
+      $(".projects").owlCarousel({
+        loop: true,
+        margin: 10,
+        responsiveClass: true,
+        autoplay: true,
+        nav: true,
+        autoplayHoverPause: true,
+        autoplaySpeed: 200,
+        margin: 50,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          500: {
+            items: 1,
+          },
+          600: {
+            items: 2,
+          },
+          1000: {
+            items: 3,
           },
         },
       });

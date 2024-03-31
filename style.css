@@ -30,16 +30,27 @@ html {
 body {
   box-sizing: border-box;
   font-family: sans-serif;
+  background-image: url(./images/background.avif);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 /* common styles */
 .small-heading {
-  font-size: 2.8rem;
+  font-size: 3rem;
   line-height: 1.4;
   letter-spacing: 1px;
 }
 a {
   transition: all 0.2s;
 }
+
+/* hr {
+  border: 0;
+  height: 1px;
+  background: #f8f9fa;
+  margin: 1rem 0;
+} */
 
 .small-heading span {
   color: #f03e3e;
@@ -210,17 +221,19 @@ header {
 }
 
 .about-second img {
-  border: 2px solid #fa5252;
+  /* border: 2px solid #fa5252; */
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  height: 23rem;
+  /* height: 36rem; */
   object-fit: cover;
-  width: 23rem;
-  border-radius: 50%;
+  /* max-width: 36rem; */
+  width: 100%;
+  /* border-radius: 50%; */
+  border-radius: 8px;
   margin: 3rem 0;
 }
 
 .about-second p {
-  width: 70%;
+  /* width: 70%; */
   text-align: center;
   margin: 2rem auto;
   font-size: 2rem;
@@ -441,6 +454,7 @@ h3 span {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 8px;
   background-color: #fff;
+  text-align: left;
 }
 
 .projects_each img {
