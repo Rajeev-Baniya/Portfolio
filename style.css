@@ -226,9 +226,9 @@ header {
   /* height: 36rem; */
   object-fit: cover;
   /* max-width: 36rem; */
-  width: 100% !important;
+  width: 80% !important;
   /* border-radius: 50%; */
-  border-radius: 8px;
+  border-radius: 50%;
   margin: 3rem 0;
 }
 
