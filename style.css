@@ -220,15 +220,24 @@ header {
   /* color: #fff; */
 }
 
+.about_myimage {
+  width: 40%;
+}
+
+.about_me {
+  width: 60%;
+}
 .about-second img {
   /* border: 2px solid #fa5252; */
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   /* height: 36rem; */
   object-fit: cover;
   /* max-width: 36rem; */
-  width: 80% !important;
+  width: 100% !important;
+  height: 50rem;
+  object-position: top;
   /* border-radius: 50%; */
-  border-radius: 50%;
+  border-radius: 2rem;
   margin: 3rem 0;
 }
 
@@ -594,6 +603,20 @@ h3 span {
     /* flex-direction: column; */
     grid-template-columns: 1fr 1fr;
     gap: 2.4rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about_myimage {
+    width: 100%;
+  }
+
+  .about_me {
+    width: 100%;
+  }
+
+  .about-second img {
+    height: 42rem;
   }
 }
 
